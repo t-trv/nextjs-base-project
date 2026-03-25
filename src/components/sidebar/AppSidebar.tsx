@@ -117,8 +117,8 @@ export default function AppSidebar() {
   ];
 
   return (
-    <div className="bg-gray-100 h-full p-4 space-y-4 flex flex-col">
-      <div className="flex-1">
+    <div className="bg-gray-100 h-full p-4 flex flex-col">
+      <div className="flex-1 space-y-4">
         {appRoutes.map((route) => (
           <SidebarCategory key={route.category} title={route.category}>
             {route.items.map((item) => (
