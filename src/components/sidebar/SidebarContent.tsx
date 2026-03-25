@@ -13,6 +13,8 @@ export default function SidebarContent({ children }: { children: React.ReactNode
       style={{
         marginLeft: isMobile ? 0 : isOpen ? SIDEBAR_WIDTH : 0,
         transition: 'margin-left 0.3s',
+        width: '100%',
+        height: `calc(100vh - ${HEADER_HEIGHT}px)`,
       }}
     >
       {children}
