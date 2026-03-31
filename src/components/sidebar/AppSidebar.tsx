@@ -12,6 +12,7 @@ import {
   Plug,
   Settings,
   User,
+  Video,
 } from 'lucide-react';
 import SidebarItem from './SidebarItem';
 import SidebarCategory from './SidebarCategory';
@@ -31,6 +32,11 @@ export default function AppSidebar() {
           path: '/app',
           label: 'Tổng quan',
           icon: <Home size={16} />,
+        },
+        {
+          path: '/app/videos',
+          label: 'Video gần đây',
+          icon: <Video size={16} />,
         },
       ],
     },
