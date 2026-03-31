@@ -13,6 +13,7 @@ import {
   Settings,
   User,
   Video,
+  Filter,
 } from 'lucide-react';
 import SidebarItem from './SidebarItem';
 import SidebarCategory from './SidebarCategory';
@@ -92,6 +93,11 @@ export default function AppSidebar() {
           path: '/app/settings',
           label: 'Cài đặt chung',
           icon: <Settings size={16} />,
+        },
+        {
+          path: '/app/event-filter',
+          label: 'Bộ lọc sự kiện',
+          icon: <Filter size={16} />,
         },
         {
           path: '/app/facial-recognition',
